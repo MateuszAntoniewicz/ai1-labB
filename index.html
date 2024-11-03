@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LAB B</title>
+    <meta name="description" content="Mateusz Antoniewicz LAB B">
+    <link rel="stylesheet" href="style1.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+<div class="mainBlock">
+
+    <form action="/search" method="GET">
+        <input type="text" class="searchBox" id="searchBox" oninput="Todo.search()" onfocus="Todo.search()">
+    </form>
+
+    <div class="sendBox">
+        <input type="text"  class="sendBoxText" id="sendBoxText">
+        <input type="date" class="sendBoxDate" id="sendBoxDate">
+        <button type="submit" class="sendBoxButton" onclick="Todo.addToStorage()">Dodaj</button>
+    </div>
+
+</div>
+
+
+
+</body>
+
+</html>
