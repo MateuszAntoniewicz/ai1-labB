@@ -29,6 +29,7 @@ class Todo{
         }
 
         if (dateValue != "") {
+            dateValue.setDate(dateValue.getDate() + 1);
             dateValue = dateValue.toISOString().split('T')[0];
         }
 
